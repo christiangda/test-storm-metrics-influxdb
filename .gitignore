@@ -12,4 +12,4 @@
 *.iml
 target/
 influxdb-data/
-grafana-data
+grafana-data/
