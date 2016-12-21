@@ -1,0 +1,25 @@
+
+#### AWS Profile
+aws.credentials.profile : "test-profile"
+
+#### AWS Kinesis Config
+
+# Name of the Kinesis stream
+kinesis.stream.name: "test-stream"
+
+# The spout will start fetching records from this position in the stream (if a checkpoint is not present). This can be
+# set to LATEST or TRIM_HORIZON. Use TRIM_HORIZON to start processing from the oldest available record.
+kinesis.stream.initial.position: "LATEST"
+
+# Number of times the spout should re-emit (retry) a failed record
+kinesis.record.retry.limit: 3
+
+# Kinesis region
+kinesis.region.name: "us-west-2"
+
+# Zookeeper endpoint
+#kinesis.zookeeper.end.points: "localhost:2000"
+kinesis.zookeeper.end.points: "127.0.0.1:2181"
+
+# Prefix/path for storing spout state in Zookeeper
+kinesis.zookeeper.data.prefix: "kinesis_spout"
