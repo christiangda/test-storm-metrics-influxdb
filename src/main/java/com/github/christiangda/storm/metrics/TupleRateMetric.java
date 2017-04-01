@@ -2,9 +2,6 @@ package com.github.christiangda.storm.metrics;
 
 import org.apache.storm.metric.api.IMetric;
 
-/**
- * Created by christian on 12/19/16.
- */
 public class TupleRateMetric implements IMetric {
 
     double recived;

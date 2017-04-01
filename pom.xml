@@ -14,10 +14,7 @@
         <jdk.version>1.7</jdk.version>
 
         <!-- Maven Dependencies versions -->
-        <storm.version>1.0.2</storm.version>
-        <aws.sdk.version>1.11.67</aws.sdk.version>
-        <aws.kinesis.storm.spout.version>1.2.0-custom-1</aws.kinesis.storm.spout.version>
-        <snakeyaml.version>1.17</snakeyaml.version>
+        <storm.version>1.0.3</storm.version>
         <storm.metrcis.influxdb.version>1.0.0</storm.metrcis.influxdb.version>
         <slf4j.version>1.7.21</slf4j.version>
 
@@ -53,29 +50,6 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>kinesis-storm-spout</artifactId>
-            <version>${aws.kinesis.storm.spout.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.storm</groupId>
-                    <artifactId>storm-core</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.logging.log4j</groupId>
-                    <artifactId>log4j-slf4j-impl</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
@@ -86,13 +60,8 @@
             <version>${slf4j.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>${snakeyaml.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.txrlabs.storm</groupId>
-            <artifactId>storm-metrcis-influxdb</artifactId>
+            <groupId>com.github.christiangda</groupId>
+            <artifactId>storm-metrics-influxdb</artifactId>
             <version>${storm.metrcis.influxdb.version}</version>
         </dependency>
     </dependencies>
