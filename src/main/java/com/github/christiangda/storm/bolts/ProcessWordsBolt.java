@@ -16,9 +16,6 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
-/**
- * Created by christian on 12/9/16.
- */
 public class ProcessWordsBolt extends BaseRichBolt {
 
     private final Logger LOG = LoggerFactory.getLogger(ProcessWordsBolt.class);

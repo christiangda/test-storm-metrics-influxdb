@@ -13,9 +13,6 @@ import org.apache.storm.utils.Utils;
 import java.util.Map;
 import java.util.Random;
 
-/**
- * Created by christian on 1/4/17.
- */
 public class WordGeneratorSpout extends BaseRichSpout {
     private static final Logger LOG = LoggerFactory.getLogger(WordGeneratorSpout.class);
 
@@ -33,7 +30,7 @@ public class WordGeneratorSpout extends BaseRichSpout {
 
     @Override
     public void nextTuple() {
-        Utils.sleep(100);
+        Utils.sleep(500);
 
         final String[] words = new String[]{"one", "two", "three", "four", "five", "unknown"};
         final String word = words[this.random.nextInt(words.length)];

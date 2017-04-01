@@ -15,9 +15,6 @@ import org.apache.storm.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Created by christian on 12/9/16.
- */
 public class ProcessWordsTopology {
     private final Logger LOG = LoggerFactory.getLogger(ProcessWordsTopology.class);
     private final String topologyName = this.getClass().getSimpleName();
