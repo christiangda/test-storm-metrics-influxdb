@@ -15,7 +15,7 @@
 
         <!-- Maven Dependencies versions -->
         <storm.version>1.0.3</storm.version>
-        <storm.metrcis.influxdb.version>1.0.0</storm.metrcis.influxdb.version>
+        <storm.metrcis.influxdb.version>1.0.1</storm.metrcis.influxdb.version>
         <slf4j.version>1.7.21</slf4j.version>
 
         <junit.version>4.12</junit.version>
