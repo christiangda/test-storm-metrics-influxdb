@@ -43,7 +43,7 @@ public class ProcessWordsTopology {
 
         //topoConf.setDebug(true);
         topoConf.setNumWorkers(2);
-        topoConf.registerMetricsConsumer(LoggingMetricsConsumer.class, 1);
+        //topoConf.registerMetricsConsumer(LoggingMetricsConsumer.class, 1);
         topoConf.registerMetricsConsumer(com.github.christiangda.storm.metrics.InfluxDBMetricsConsumer.class, 1);
         topoConf.put("metrics.reporter.name", "com.github.christiangda.storm.metrics.InfluxDBMetricsConsumer");
         topoConf.put("metrics.influxdb.url", "http://localhost:8086");
@@ -97,7 +97,7 @@ public class ProcessWordsTopology {
             ProcessWordsTopology topology = new ProcessWordsTopology();
 
             if (mode.equals("local")) {
-                topology.runLocal(1000000);
+                topology.runLocal(10000000);
             } else if (mode.equals("cluster")) {
                 topology.runCluster();
             }
